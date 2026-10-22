@@ -7,3 +7,18 @@ if (navToggle && navMenu) {
     navToggle.setAttribute('aria-expanded', String(isOpen));
   });
 }
+
+const revealItems = document.querySelectorAll('.reveal');
+
+const revealObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+      }
+    });
+  },
+  { threshold: 0.14 }
+);
+
+revealItems.forEach((item) => revealObserver.observe(item));
