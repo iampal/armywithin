@@ -3,28 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARMYWITHIN — Not for everyone, clearly.</title>
     <meta
       name="description"
-      content="ARMYWITHIN is a premium BTS-inspired fan landing page exploring love, music, and the power of togetherness."
+      content="ARMYWITHIN: where fandom culture meets mental health. The book, the journal, and the drop."
     />
-    <title>ARMYWITHIN | BTS Fan Community</title>
+    <meta name="author" content="ARMYWITHIN" />
+    <meta property="og:title" content="ARMYWITHIN" />
+    <meta
+      property="og:description"
+      content="Where fandom culture meets mental health. Not for everyone, clearly."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=1200&q=80" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ARMYWITHIN" />
+    <meta
+      name="twitter:description"
+      content="Where fandom culture meets mental health. Not for everyone, clearly."
+    />
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=1200&q=80" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Cormorant+Garamond:wght@500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Instrument+Serif:ital@0;1&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page-shell"></div>
+    <div class="noise"></div>
 
-    <header class="site-header" id="home">
-      <nav class="nav container">
-        <a href="#home" class="brand" aria-label="ARMYWITHIN home">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#top" class="brand" aria-label="ARMYWITHIN home">
           <span class="brand-mark">A</span>
-          <span class="brand-text">ARMYWITHIN</span>
+          <span class="brand-name">ARMYWITHIN</span>
         </a>
 
         <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
@@ -33,283 +44,214 @@
           <span></span>
         </button>
 
-        <div class="nav-menu">
-          <a href="#about">About</a>
-          <a href="#members">Members</a>
-          <a href="#eras">Eras</a>
-          <a href="#community">Community</a>
-          <a href="#community" class="nav-cta">Join the Army</a>
-        </div>
-      </nav>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="#journal">Journal</a>
+          <a href="#story">Story</a>
+          <a href="#drop">Drop</a>
+          <a href="#notes">Notes</a>
+          <a href="#community" class="nav-cta">Join</a>
+        </nav>
+      </div>
     </header>
 
-    <main>
+    <main id="top">
       <section class="hero">
         <div class="container hero-grid">
-          <div class="hero-copy reveal">
-            <span class="eyebrow">Love yourself • still with you</span>
+          <div class="hero-copy">
+            <p class="kicker">Where fandom culture meets mental health</p>
             <h1>
-              The sound of <span>belonging</span>.<br />
-              The power of <span>love</span>.
+              Not for everyone,<br />
+              <span>clearly.</span>
             </h1>
-            <p>
-              ARMYWITHIN celebrates the soul of BTS — the music, the emotion, the growth,
-              and the unbreakable bond between the artists and the fans who carry their story
-              forward with courage, hope, and heart.
+            <p class="intro">
+              ARMYWITHIN is a cultural platform built around emotional honesty, fandom archives,
+              and the stories we carry long after the music ends.
             </p>
-            <div class="hero-actions">
-              <a href="#members" class="btn btn-primary">Meet the members</a>
-              <a href="#about" class="btn btn-secondary">Discover more</a>
+
+            <div class="cta-row">
+              <a href="#drop" class="btn btn-primary">Explore the drop</a>
+              <a href="#story" class="btn btn-secondary">Read the story</a>
             </div>
 
-            <ul class="hero-stats" aria-label="Community statistics">
-              <li>
-                <strong>7</strong>
-                <span>members</span>
-              </li>
-              <li>
-                <strong>9+</strong>
-                <span>eras</span>
-              </li>
-              <li>
-                <strong>∞</strong>
-                <span>love</span>
-              </li>
-            </ul>
+            <div class="stats">
+              <div>
+                <span class="label">Edition</span>
+                <strong>01</strong>
+              </div>
+              <div>
+                <span class="label">Focus</span>
+                <strong>Fandom / Mind</strong>
+              </div>
+              <div>
+                <span class="label">Mode</span>
+                <strong>Open</strong>
+              </div>
+            </div>
           </div>
 
-          <div class="hero-visual reveal">
-            <div class="visual-card main-visual">
-              <img
-                src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80"
-                alt="BTS inspired crowd under purple lights"
-              />
+          <div class="hero-visual">
+            <div class="cover-frame">
+              <div class="cover-card">
+                <div class="cover-topline">ARMYWITHIN</div>
+                <h2>Not for everyone,<br />clearly.</h2>
+                <p>The book. The journal. The drop.</p>
+              </div>
             </div>
-            <div class="floating-panel panel-left">#BTS</div>
-            <div class="floating-panel panel-right">LOVE YOURSELF</div>
+            <div class="floating-pill pill-one">book</div>
+            <div class="floating-pill pill-two">journal</div>
           </div>
         </div>
       </section>
 
-      <section class="ticker" aria-label="BTS community highlights">
+      <div class="ticker">
         <div class="ticker-track">
           <span>ARMYWITHIN</span>
-          <span>LOVE YOURSELF</span>
-          <span>STILL WITH YOU</span>
-          <span>PERMISSION TO DANCE</span>
-          <span>DNA</span>
-          <span>BUTTER</span>
-          <span>DREAMERS</span>
+          <span>NOT FOR EVERYONE</span>
+          <span>BOOK</span>
+          <span>JOURNAL</span>
+          <span>DROP</span>
           <span>ARMYWITHIN</span>
-          <span>LOVE YOURSELF</span>
-          <span>STILL WITH YOU</span>
-          <span>PERMISSION TO DANCE</span>
-          <span>DNA</span>
-          <span>BUTTER</span>
-          <span>DREAMERS</span>
+          <span>NOT FOR EVERYONE</span>
+          <span>BOOK</span>
+          <span>JOURNAL</span>
+          <span>DROP</span>
         </div>
-      </section>
+      </div>
 
-      <section id="about" class="section section-soft">
+      <section id="journal" class="section muted-section">
         <div class="container">
-          <div class="section-head reveal">
-            <span class="eyebrow">Our vibe</span>
-            <h2>Music with meaning. Energy with heart.</h2>
+          <div class="section-head">
+            <p class="eyebrow">The journal</p>
+            <h2>Culture, emotion, and the archive we keep.</h2>
           </div>
 
-          <div class="info-grid">
-            <article class="info-card reveal">
-              <div class="card-icon"><i class="fa-solid fa-heart"></i></div>
-              <h3>Love as language</h3>
+          <div class="paper-grid">
+            <article class="paper-card">
+              <span class="meta">Essay 01</span>
+              <h3>Fandom as a mirror</h3>
               <p>
-                BTS taught the world that vulnerability is strength. Every lyric carries a message of healing,
-                acceptance, and courage.
+                What happens when devotion becomes a map for identity, grief, and belonging?
               </p>
             </article>
 
-            <article class="info-card reveal">
-              <div class="card-icon"><i class="fa-solid fa-music"></i></div>
-              <h3>Growth in motion</h3>
+            <article class="paper-card">
+              <span class="meta">Essay 02</span>
+              <h3>What we hold after the glow</h3>
               <p>
-                From soulful beginnings to explosive global hits, BTS continues to redefine what it means to evolve with grace.
+                The emotional residue of obsession, comfort, and community that remains after the spotlight fades.
               </p>
             </article>
 
-            <article class="info-card reveal">
-              <div class="card-icon"><i class="fa-solid fa-users"></i></div>
-              <h3>One united army</h3>
+            <article class="paper-card">
+              <span class="meta">Essay 03</span>
+              <h3>Not everyone gets it</h3>
               <p>
-                Across languages and borders, fans connect through shared emotion, a powerful memory, and a beloved story.
+                Sometimes the point is not to be understood by everyone — only by the people who feel it too.
               </p>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="members" class="section section-deep">
-        <div class="container">
-          <div class="section-head align-left reveal">
-            <span class="eyebrow">Members</span>
-            <h2>The voices behind the movement.</h2>
+      <section id="story" class="section story-section">
+        <div class="container story-grid">
+          <div class="story-image-wrap">
+            <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=1200&q=80" alt="Editorial portrait" />
           </div>
 
-          <div class="members-grid">
-            <article class="member-card reveal">
-              <div class="member-photo">
-                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80" alt="RM" />
-              </div>
-              <div class="member-meta">
-                <span>RM</span>
-                <h3>Leader</h3>
-                <p>Thoughtful, poetic, and fearless in the pursuit of meaning.</p>
-              </div>
-            </article>
-
-            <article class="member-card reveal">
-              <div class="member-photo">
-                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=800&q=80" alt="Jin" />
-              </div>
-              <div class="member-meta">
-                <span>JIN</span>
-                <h3>Vocal warmth</h3>
-                <p>Steady, comforting, and endlessly sincere in every heartbeat.</p>
-              </div>
-            </article>
-
-            <article class="member-card reveal">
-              <div class="member-photo">
-                <img src="https://images.unsplash.com/photo-1504593811423-6dd665756598?auto=format&fit=crop&w=800&q=80" alt="Suga" />
-              </div>
-              <div class="member-meta">
-                <span>SUGA</span>
-                <h3>Deep voice</h3>
-                <p>Honest, sharp, and deeply human in every lyric and verse.</p>
-              </div>
-            </article>
-
-            <article class="member-card reveal">
-              <div class="member-photo">
-                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80" alt="J-Hope" />
-              </div>
-              <div class="member-meta">
-                <span>J-HOPE</span>
-                <h3>Sunshine energy</h3>
-                <p>Joyful, vibrant, and always helping the room glow brighter.</p>
-              </div>
-            </article>
-
-            <article class="member-card reveal">
-              <div class="member-photo">
-                <img src="https://images.unsplash.com/photo-1504593811423-6dd665756598?auto=format&fit=crop&w=800&q=80" alt="Jimin" />
-              </div>
-              <div class="member-meta">
-                <span>JIMIN</span>
-                <h3>Grace & soul</h3>
-                <p>Elegant, expressive, and unforgettable with every performance.</p>
-              </div>
-            </article>
-
-            <article class="member-card reveal">
-              <div class="member-photo">
-                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=800&q=80" alt="V" />
-              </div>
-              <div class="member-meta">
-                <span>V</span>
-                <h3>Dreamer</h3>
-                <p>Poetic, magnetic, and full of the kind of charm that lingers.</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="eras" class="section section-soft">
-        <div class="container">
-          <div class="section-head reveal">
-            <span class="eyebrow">Highlights</span>
-            <h2>Era by era, the story keeps unfolding.</h2>
-          </div>
-
-          <div class="feature-grid">
-            <article class="feature-card feature-large reveal">
-              <div class="feature-copy">
-                <p class="feature-tag">Special album</p>
-                <h3>LOVE YOURSELF</h3>
-                <p>
-                  A defining chapter where self-love became a movement and every word felt personal.
-                </p>
-              </div>
-            </article>
-
-            <article class="feature-card feature-small feature-purple reveal">
-              <div class="feature-copy">
-                <p class="feature-tag">Live energy</p>
-                <h3>Concert nights</h3>
-                <p>The cheers, the lights, the feeling that never fades.</p>
-              </div>
-            </article>
-
-            <article class="feature-card feature-small feature-dark reveal">
-              <div class="feature-copy">
-                <p class="feature-tag">Freedom</p>
-                <h3>Permission to dance</h3>
-                <p>Joy in motion. Hope in rhythm. Courage in every step.</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section story-section">
-        <div class="container story-wrap">
-          <div class="story-copy reveal">
-            <span class="eyebrow">Our story</span>
-            <h2>We grew with them, and they grew with us.</h2>
+          <div class="story-copy">
+            <p class="eyebrow">The story</p>
+            <h2>ARMYWITHIN was never meant to be polite.</h2>
             <p>
-              ARMYWITHIN was created as a home for the fandom — a place to celebrate each return, each release,
-              and each memory that made the BTS journey feel deeply personal.
+              It was built for the people who feel too much, think too deeply, and carry fandom as more than a hobby.
+              It is a confrontation with the emotional reality of being shaped by culture, by art, by community, and by the quiet labor of healing.
             </p>
             <p>
-              It is more than music. It is a shared heartbeat, a collective dream, and a reminder that love can shape how we heal,
-              how we rise, and how we keep moving forward.
+              This is not a product pitch. It is a declaration of perspective: fandom can be intimate, devastating, beautiful, and real.
+            </p>
+            <a href="#community" class="text-link">Become part of the archive</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="drop" class="section product-section">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">The drop</p>
+            <h2>Objects for people who live at the edge of feeling.</h2>
+          </div>
+
+          <div class="product-grid">
+            <article class="product-card product-a">
+              <div class="product-image"></div>
+              <div class="product-text">
+                <span class="meta">01 / Capsule</span>
+                <h3>Afterglow</h3>
+                <p>Structured layers for a softer kind of power.</p>
+              </div>
+            </article>
+
+            <article class="product-card product-b">
+              <div class="product-image"></div>
+              <div class="product-text">
+                <span class="meta">02 / Journal</span>
+                <h3>Archive 01</h3>
+                <p>Printed reflections from the fandom condition.</p>
+              </div>
+            </article>
+
+            <article class="product-card product-c">
+              <div class="product-image"></div>
+              <div class="product-text">
+                <span class="meta">03 / Book</span>
+                <h3>Not for everyone</h3>
+                <p>A deep read on longing, identity, and online devotion.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="notes" class="section note-section">
+        <div class="container note-wrap">
+          <div class="note-copy">
+            <p class="eyebrow">Field notes</p>
+            <h2>We do not chase universal appeal.</h2>
+            <p>
+              The point is not to be liked by everyone. The point is to be deeply felt by the people who understand the emotional logic of fandom.
             </p>
           </div>
 
-          <div class="story-visual reveal">
-            <img
-              src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1200&q=80"
-              alt="Fans enjoying a BTS-inspired performance moment"
-            />
+          <div class="quote-box">
+            “The loudest thing in the room is often the quietest thing inside us.”
           </div>
         </div>
       </section>
 
-      <section id="community" class="section section-cta">
-        <div class="container cta-box reveal">
+      <section id="community" class="section cta-section">
+        <div class="container cta-wrap">
           <div>
-            <span class="eyebrow">Join the community</span>
-            <h2>Celebrate every comeback, every lyric, every memory.</h2>
+            <p class="eyebrow">Join the archive</p>
+            <h2>Step into the conversation.</h2>
           </div>
-          <a href="#home" class="btn btn-primary">Become part of the Army</a>
+          <a href="#top" class="btn btn-primary">Enter ARMYWITHIN</a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <div class="brand-block">
+        <div class="footer-brand">
           <span class="brand-mark">A</span>
           <span>ARMYWITHIN</span>
         </div>
-
-        <div class="socials" aria-label="Social media links">
-          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://www.youtube.com/" target="_blank" rel="noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-          <a href="https://open.spotify.com/" target="_blank" rel="noreferrer" aria-label="Spotify"><i class="fa-brands fa-spotify"></i></a>
-          <a href="https://x.com/" target="_blank" rel="noreferrer" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <div class="footer-links">
+          <a href="#journal">Journal</a>
+          <a href="#drop">Drop</a>
+          <a href="#community">Community</a>
         </div>
       </div>
-      <p class="copyright">© 2026 ARMYWITHIN. Built with love for the BTS fandom.</p>
+      <p class="copyright">© 2026 ARMYWITHIN — Not for everyone, clearly.</p>
     </footer>
 
     <script src="script.js"></script>
